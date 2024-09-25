@@ -1,0 +1,25 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240923115434
+Username: DIRECTORY\hs2994
+RunAs User: DIRECTORY\hs2994
+Configuration Name: 
+Machine: LHU214--Y231737 (Microsoft Windows NT 10.0.22621.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command Get-WmiObject Win32_Process | Where-Object { $_.ExecutablePath -eq 'C:\Users\hs2994\AppData\Local\Programs\Microsoft VS Code\bin\code-tunnel.exe' } | Select @{Name='Id'; Expression={$_.ProcessId}} | Stop-Process -Force
+Process ID: 14460
+PSVersion: 5.1.22621.3958
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.3958
+BuildVersion: 10.0.22621.3958
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS>Get-WmiObject Win32_Process | Where-Object { $_.ExecutablePath -eq 'C:\Users\hs2994\AppData\Local\Programs\Microsoft VS Code\bin\code-tunnel.exe' } | Select @{Name='Id'; Expression={$_.ProcessId}} | Stop-Process -Force
+PS>$global:?
+True
+**********************
+Windows PowerShell transcript end
+End time: 20240923115435
+**********************
